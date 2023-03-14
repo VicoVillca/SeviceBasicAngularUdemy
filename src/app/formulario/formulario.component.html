@@ -1,0 +1,19 @@
+<form class="item">
+  <input
+    type="text"
+    [(ngModel)]="nombre"
+    placeholder="nombre"
+    id="nombre"
+    [ngModelOptions]="{ standalone: true }"
+  />
+
+  <input
+    type="text"
+    [(ngModel)]="apellido"
+    placeholder="apellido"
+    id="apellido"
+    [ngModelOptions]="{ standalone: true }"
+  />
+
+  <button class="btn btn-primary" (click)="agregar()">+</button>
+</form>
